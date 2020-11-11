@@ -5,6 +5,9 @@
   "repository": "https://github.com/moisesrms/node-typescript-structure.git",
   "author": "Moises Ribeiro <moisesrms@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
+  },
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
@@ -16,7 +19,9 @@
     "@commitlint/config-conventional": "^11.0.0",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.5"
   },
   "config": {
     "commitizen": {
